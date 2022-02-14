@@ -6,7 +6,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace TestsSelenium
 {
-    public class Tests
+    public class MyProfileEditTests
     {
         private WebDriver driver;
         private WebDriverWait wait;
