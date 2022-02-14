@@ -42,6 +42,7 @@ namespace TestsSelenium
         {
             if (!isAuth) Authorization(Url);
             driver.FindElement(By.CssSelector("a[class='btn_edit_profile itemMenu'")).Click();
+            Assert.AreEqual("https://old.kzn.opencity.pro/cabinet/myprofile", driver.Url, "Не открылась страница редактирования профиля");
             
             IWebElement lastname = wait.Until(e => e.FindElement(By.CssSelector("input[data-ui='lastname']")));
             lastname.Clear();
